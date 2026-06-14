@@ -1,0 +1,16 @@
+{
+  "phase_id": "PHASE_01_ASSESSMENT",
+  "objective": "Establish high-fidelity threat model",
+  "fields": {
+    "suspect_profile": "[INSERT_TYPE: PROFESSIONAL/IDEOLOGICAL/UNSTABLE]",
+    "weapon_capability_index": "[INSERT_VALUE: 0-10]",
+    "structure_topology": "[INSERT_MAP_FILE_PATH]",
+    "civilian_risk_density": "[INSERT_VALUE: PERCENTAGE]"
+  },
+  "logic_gate": {
+    "threat_threshold": 8,
+    "if_exceeded": "TRIGGER_IMMEDIATE_CONTAINMENT",
+    "next_phase": "PHASE_02_CONTAINMENT"
+  }
+}
+
