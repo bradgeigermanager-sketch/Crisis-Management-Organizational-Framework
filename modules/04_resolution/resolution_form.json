@@ -1,0 +1,16 @@
+{
+  "phase_id": "PHASE_04_RESOLUTION",
+  "objective": "Terminate threat with minimal collateral risk",
+  "fields": {
+    "entry_points": ["[ARRAY_OF_COORDINATES]"],
+    "suppression_tactics": "[ENUM: DYNAMIC_ENTRY/PRECISION_NEUTRALIZATION]",
+    "triage_zone": "[COORDINATE_LOCATION]",
+    "breach_timing": "[TIMESTAMP_SYNC]"
+  },
+  "logic_gate": {
+    "collateral_risk_score": "<5%",
+    "threat_neutralized": "TRUE/FALSE",
+    "next_phase": "PHASE_05_DEBRIEF"
+  }
+}
+
