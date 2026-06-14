@@ -1,0 +1,19 @@
+{
+  "phase_id": "STRING",
+  "objective": "STRING",
+  "data_inputs": {
+    "critical_parameters": ["LIST", "OF", "VARIABLES"],
+    "sensor_sources": ["LIST", "OF", "INPUTS"]
+  },
+  "logic_gate": {
+    "condition_if": "TRUE/FALSE",
+    "action_triggered": "COMMAND",
+    "next_phase_trigger": "ID"
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2026-06-13",
+    "classification": "TACTICAL_ASSET"
+  }
+}
+
