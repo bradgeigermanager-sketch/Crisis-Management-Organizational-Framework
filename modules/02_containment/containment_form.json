@@ -1,0 +1,16 @@
+{
+  "phase_id": "PHASE_02_CONTAINMENT",
+  "objective": "Limit incident expansion and secure perimeter",
+  "fields": {
+    "inner_perimeter_coords": "[COORDINATE_ARRAY]",
+    "outer_perimeter_coords": "[COORDINATE_ARRAY]",
+    "access_control_status": "[STATUS: LOCKED/MONITORED]",
+    "communication_node": "[ASSIGNED_NEGOTIATOR_ID]"
+  },
+  "logic_gate": {
+    "breach_detected": "INITIATE_LOCKDOWN",
+    "containment_integrity": ">95%",
+    "next_phase": "PHASE_03_ENGAGEMENT"
+  }
+}
+
