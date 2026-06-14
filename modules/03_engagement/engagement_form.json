@@ -1,0 +1,16 @@
+{
+  "phase_id": "PHASE_03_ENGAGEMENT",
+  "objective": "Achieve non-lethal resolution via psychological influence",
+  "fields": {
+    "rapport_score": "[FLOAT: 0.0-1.0]",
+    "primary_demand": "[TEXT_STRING]",
+    "behavioral_stairway_stage": "[ENUM: EMPATHY/RAPPORT/INFLUENCE/BEHAVIORAL_CHANGE]",
+    "volatility_index": "[INTEGER: 1-10]"
+  },
+  "logic_gate": {
+    "volatility_threshold": 7,
+    "if_exceeded": "SUSPEND_NEGOTIATION_AND_PREPARE_INTERVENTION",
+    "next_phase": "PHASE_04_RESOLUTION"
+  }
+}
+
