@@ -1,0 +1,19 @@
+{
+  "phase_id": "PHASE_05_DEBRIEF",
+  "objective": "Institutionalize learning and refine operational models",
+  "fields": {
+    "incident_id": "[UUID]",
+    "performance_metrics": {
+      "response_time_seconds": "[INTEGER]",
+      "negotiation_success_rate": "[FLOAT]",
+      "tactical_accuracy": "[FLOAT]"
+    },
+    "lessons_learned": "[TEXT_OR_MARKDOWN_PATH]",
+    "suggested_logic_gate_adjustments": "[ARRAY_OF_UPDATES]"
+  },
+  "logic_gate": {
+    "archive_complete": "TRUE",
+    "system_update_required": "TRUE/FALSE"
+  }
+}
+
